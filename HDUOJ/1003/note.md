@@ -3,6 +3,10 @@
 - 总结规律
 - 表达规律
 
+也即整理dp方程：dp[i]=max(dp[i-1],dp[i-1]+v[i]) ; 其实 关键在记忆起始位置和结束位置
+check:
+http://acm.hdu.edu.cn/discuss/problem/post/reply.php?postid=31260&messageid=1&deep=0
+
  如果是
 1
 4 -1 -4 -6 -9
