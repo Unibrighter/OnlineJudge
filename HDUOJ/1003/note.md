@@ -3,9 +3,20 @@
 - 总结规律
 - 表达规律
 
-也即整理dp方程：dp[i]=max(dp[i-1],dp[i-1]+v[i]) ; 其实 关键在记忆起始位置和结束位置
-check:
-http://acm.hdu.edu.cn/discuss/problem/post/reply.php?postid=31260&messageid=1&deep=0
+- 也即整理dp方程：dp[i]=max(dp[i-1],dp[i-1]+v[i]) ; 其实 关键在记忆起始位置和结束位置
+- check:
+- http://acm.hdu.edu.cn/discuss/problem/post/reply.php?postid=31260&messageid=1&deep=0
+
+- 另一个分治的思路
+- 递归左边最大的,递归右边最大的.两者孰大?记作temp
+- 然后按照中部的延展计算,记作lpos=>Lmaxn 和rpos=>Rmaxn
+- 比较temp和上述延展计算的结果,返回整理结果.
+
+- http://acm.hdu.edu.cn/discuss/problem/post/reply.php?postid=31858&messageid=1&deep=0
+				
+
+---
+
 
  如果是
 1
